@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#808080">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center" 
+        android:orientation="vertical">
+        
+        <Button
+	        android:id="@+id/setAvatar_btn"
+	        android:layout_width="86dp"
+	        android:layout_height="86dp"
+	        android:background="@drawable/icon_find"
+	        android:layout_marginTop="12dp"
+	        android:gravity="center_horizontal"
+	        android:onClick="btnsetAvatar" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center" 
+        android:orientation="vertical">
+   		
+        
+        <LinearLayout
+            android:id="@+id/myReword_layout"
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:orientation="horizontal">
+
+   			<ImageView
+   			    android:layout_width="24dp"
+   			    android:layout_height="24dp"
+   			    android:layout_gravity="center_vertical"
+   			    android:layout_marginLeft="8dp"
+   			    android:src="@drawable/icon_myhead" />
+
+   			<TextView
+   			    android:id="@+id/myreword_point"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:padding="8dp"
+   			    android:textColor="#fff"
+   			    android:textSize="16sp" />    		    
+   		</LinearLayout>
+   		
+        <LinearLayout
+            android:id="@+id/myPublish_layout"
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginTop="24dp"
+   		    android:orientation="horizontal"
+   		    android:onClick="myPublish" >
+
+   			<ImageView
+   			    android:layout_width="24dp"
+   			    android:layout_height="24dp"
+   			    android:layout_gravity="center_vertical"
+   			    android:layout_marginLeft="8dp"
+   			    android:src="@drawable/icon_mypublish" />
+
+   			<TextView
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:padding="8dp"
+   			    android:text="发布记录"
+   			    android:textColor="#fff"
+   			    android:textSize="16sp" />    		    
+   		</LinearLayout>
+   		
+        <LinearLayout
+            android:id="@+id/myReceive_layout"
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginTop="24dp"
+   		    android:orientation="horizontal"
+   		    android:onClick="myReceive" >
+
+   			<ImageView
+   			    android:layout_width="24dp"
+   			    android:layout_height="24dp"
+   			    android:layout_gravity="center_vertical"
+   			    android:layout_marginLeft="8dp"
+   			    android:src="@drawable/icon_myreceive" />
+
+   			<TextView
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:padding="8dp"
+   			    android:text="领取记录"
+   			    android:textColor="#fff"
+   			    android:textSize="16sp" />    		    
+   		</LinearLayout>
+   		
+        <LinearLayout
+            android:id="@+id/rankinglist_layout"
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginTop="24dp"
+   		    android:orientation="horizontal"
+   		    android:onClick="rankinglist" >
+
+   			<ImageView
+   			    android:layout_width="24dp"
+   			    android:layout_height="24dp"
+   			    android:layout_gravity="center_vertical"
+   			    android:layout_marginLeft="8dp"
+   			    android:src="@drawable/icon_rankinglist" />
+
+   			<TextView
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:padding="8dp"
+   			    android:text="天使排行榜"
+   			    android:textColor="#fff"
+   			    android:textSize="16sp" />    		    
+   		</LinearLayout>
+   		
+        <LinearLayout
+            android:id="@+id/setting_layout"
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginTop="24dp"
+   		    android:orientation="horizontal"
+   		    android:onClick="setting" >
+
+   			<ImageView
+   			    android:layout_width="24dp"
+   			    android:layout_height="24dp"
+   			    android:layout_gravity="center_vertical"
+   			    android:layout_marginLeft="8dp"
+   			    android:src="@drawable/icon_changepw" />
+
+   			<TextView
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:padding="8dp"
+   			    android:text="设置"
+   			    android:textColor="#fff"
+   			    android:textSize="16sp" />    		    
+   		</LinearLayout>
+   		
+        
+       </LinearLayout>  
+    
+</LinearLayout>

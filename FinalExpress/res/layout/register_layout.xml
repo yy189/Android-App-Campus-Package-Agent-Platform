@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/login_layout">
+    
+        
+    <RelativeLayout
+        android:id="@+id/register_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+        
+        <FrameLayout
+            android:id="@+id/studendid_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:gravity="center" 
+            android:layout_height="50dip"
+            android:background="@drawable/edit_layout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"      
+                android:layout_marginLeft="10dp"       
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/username_24dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/studentid"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="学号"
+                android:inputType="number"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="@android:color/white" />
+
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/username_layout"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/studendid_layout"
+            android:layout_marginTop="8dp"
+            android:gravity="center" 
+            android:layout_height="50dip"
+            android:background="@drawable/edit_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"      
+                android:layout_marginLeft="10dp"       
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/username_24dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="姓名"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="@android:color/white" />
+
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/password_layout"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/username_layout"
+            android:layout_marginTop="8dp"
+            android:gravity="center" 
+            android:layout_height="50dip"
+            android:background="@drawable/edit_layout">
+
+            <Button
+                android:id="@+id/eyes_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/eye_18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"      
+                android:layout_marginLeft="8dp"       
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/password_24dp"
+                android:visibility="visible" />
+
+              <EditText
+                  android:id="@+id/password"
+                  android:layout_width="fill_parent"
+                  android:layout_height="match_parent"
+                  android:background="@null"
+                  android:ems="10"
+                  android:hint="密码"
+                  android:inputType="textPassword"
+                  android:maxLength="20"
+                  android:paddingLeft="55dp"
+                  android:paddingRight="60dp"
+                  android:textColor="@android:color/white" />
+
+        </FrameLayout>
+        
+         <FrameLayout
+            android:id="@+id/department_layout"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/password_layout"
+            android:layout_marginTop="8dp"
+            android:gravity="center" 
+            android:layout_height="50dip"
+            android:background="@drawable/edit_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"      
+                android:layout_marginLeft="10dp"       
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/department_24dp"
+                android:visibility="visible" />
+            
+            <Spinner
+                android:id="@+id/department"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="院系"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="@android:color/white" />
+
+          </FrameLayout>
+        
+          <FrameLayout
+            android:id="@+id/dormitory_layout"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/department_layout"
+            android:layout_marginTop="8dp"
+            android:gravity="center" 
+            android:layout_height="50dip"
+            android:background="@drawable/edit_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"      
+                android:layout_marginLeft="10dp"       
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/dormitory_24dp"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/dormitory"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="宿舍"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="@android:color/white" />
+
+            </FrameLayout>
+
+        <Button
+            android:id="@+id/Register2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#333333"
+            android:textColor="@android:color/white"   
+            android:layout_alignRight="@id/dormitory_layout"
+            android:layout_below="@id/dormitory_layout"          
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="注  册" />
+      
+        </RelativeLayout>
+        
+</LinearLayout>

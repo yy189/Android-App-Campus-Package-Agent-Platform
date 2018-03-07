@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/title"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp" 
+		android:gravity="center_vertical" 
+		android:background="@drawable/title_bar" >  
+			
+		<ImageButton 
+	    	android:id="@+id/return_setting"
+	    	android:layout_width="wrap_content" 
+      		android:layout_height="wrap_content"
+      		android:layout_alignParentLeft="true" 
+      		android:layout_centerVertical="true"
+      		android:layout_marginLeft="5dp"
+      		android:background="@drawable/back_img"/>  	
+      		
+		<TextView
+       		android:layout_width="wrap_content" 
+       		android:layout_height="wrap_content" 
+       		android:text="修改密码"
+       		android:layout_centerInParent="true"
+       		android:textSize="20sp"		
+			android:textColor="#ffffff" /> 	               
+    
+	</RelativeLayout>
+			
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginTop="64dip"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp" >
+
+        
+        <EditText
+            android:id="@+id/oddpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:ems="10"
+            android:hint="输入原密码"
+            android:textColor="#cccccc"
+            android:background="@drawable/login_edit_pressed"
+            android:inputType="textPassword" >
+        </EditText>
+        
+        <EditText
+            android:id="@+id/newpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:ems="10"
+            android:hint="输入新密码"
+            android:textColor="#cccccc"
+            android:background="@drawable/login_edit_pressed"
+            android:inputType="textPassword" >
+        </EditText>
+        
+        <EditText
+            android:id="@+id/new2password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:ems="10"
+            android:hint="确认新密码"
+            android:textColor="#cccccc"
+            android:background="@drawable/login_edit_pressed"
+            android:inputType="textPassword" >
+        </EditText>
+        
+        <Button
+	        android:id="@+id/button_setting_ok"
+	        android:layout_width="match_parent"
+	        android:layout_marginTop="36dip"
+	        android:layout_height="wrap_content"
+	        android:text="确认提交" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalexpress"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+     <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name="com.express.activity.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.express.activity.RegisterActivity">
+        </activity>
+        
+         <activity android:name="com.express.activity.LoadingActivity">
+        </activity>
+             
+        <activity android:name="com.express.activity.HomePageActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.LPublishActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.LReceiveActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.LRankingListActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.LSettingActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.RSendMessageActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.RAddFriendsActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.RMaybeFriendsActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.ChatActivity">
+        </activity>
+        
+        <activity android:name="com.express.activity.FindPassWordActivity">
+        </activity>
+
+    </application>
+
+</manifest>

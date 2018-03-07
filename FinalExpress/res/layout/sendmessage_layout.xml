@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+    
+	<RelativeLayout 
+	    android:id="@+id/title"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp" 
+		android:gravity="center_vertical" 
+		android:background="@drawable/title_bar" >  
+		
+	    <ImageButton 
+	    	android:id="@+id/return_send"
+	    	android:layout_width="wrap_content" 
+      		android:layout_height="wrap_content"
+      		android:layout_alignParentLeft="true" 
+      		android:layout_centerVertical="true"
+      		android:layout_marginLeft="5dp"
+      		android:background="@drawable/back_img"/>	
+
+	     		
+		<TextView
+	      		android:layout_width="wrap_content" 
+	      		android:layout_height="wrap_content" 
+	      		android:text="发布代领信息"
+	      		android:layout_centerInParent="true"
+	      		android:textSize="20sp"		
+			    android:textColor="#ffffff" /> 	   
+			    
+	   <Button 
+		    	android:id="@+id/send_btn"
+		    	android:layout_width="30dp" 
+	      		android:layout_height="30dp"
+	      		android:layout_alignParentRight="true" 
+	      		android:layout_centerVertical="true"
+	      		android:layout_marginRight="5dp"
+	      		android:background="@drawable/icon_publish"
+				android:onClick="btnsend"/>  
+	</RelativeLayout>
+	
+    <EditText
+       android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:minLines="3"
+        android:textColor="#000000"
+        android:background="@null"
+        android:hint="快来帮我取快递"/>
+
+</LinearLayout>
